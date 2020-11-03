@@ -1,0 +1,15 @@
+{
+  "background_color": "purple",
+  "description": "Gatos",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon/fox-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Gatos Fofos",
+  "short_name": "Gatos",
+  "start_url": "/a2hs/index.html"
+}
