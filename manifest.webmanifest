@@ -1,0 +1,15 @@
+{
+  "background_color": "blue",
+  "description": "Lol.",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon/icon.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    }
+  ],
+  "name": "Awesome Lol",
+  "short_name": "Lol",
+  "start_url": "/pwa-examples/a2hs/index.html"
+}

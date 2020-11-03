@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body
+{
+    margin: 0;
+    padding: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #060c21;
+    font-family:  'Roboto', sans-serif;
+}
+
+.container 
+{
+    position: relative;
+    width: 90%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap:0 50px;
+}
+.container .box
+{
+    /*Arrume a posição aqui*/
+    position: relative;
+    left : 0px;
+    height:400px;
+    background: #060c21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #000;
+}
+.content 
+{
+    position: relative;
+    padding: 30px;
+    transform:translateY(40px);
+}
+.content h2
+{
+   position: absolute;
+   top: -60px;
+   right: 20px; 
+   margin: 0;
+   padding: 0;
+   font-size: 10em;
+   color: rgba(255, 255, 255,.05);
+   transition: 0.5;
+
+}
+.box:hover .content h2
+{
+    top: -140px; 
+}
+.box .content h3
+{
+    margin: 0 0 10px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+.container .box:before /*Magica acontece aqui*/
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff; 
+    transform: skew(2deg,2deg);
+    z-index: -1;  
+}
+.container .box:nth-child(1):before
+{
+                                        /*baixo*//*cima*/
+    background: linear-gradient(315deg,#03bfcc,#62269b);
+}
+.container .box:nth-child(2):before
+{
+                                        /*baixo*//*cima*/
+    background: linear-gradient(315deg,#333238,#858794);
+}
+.container .box:nth-child(3):before
+{
+                                        /*baixo*//*cima*/
+    background: linear-gradient(315deg,#1a2e4f,#a02b33);
+}
+.container .box:nth-child(4):before
+{
+                                        /*baixo*//*cima*/
+    background: linear-gradient(315deg,#5d5859,#a09ca9);
+}
+.container .box:after /*Container fica cor meio a meio*/
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255,0.05)
+}
+.box .content p
+{
+    margin: 0;
+    padding: 0;
+    color: rgb(236, 236, 236);
+    font-size: 16px;
+}
+
+.box .content input
+{
+    background: transparent;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    margin: 20px 0 0;
+    padding: 0px;
+    padding-left:5px ;
+    padding-right:5px ;
+    text-decoration: none;
+    display: inline;
+    color:white;
+    transition: 0.5s;
+    transform: translateY(-20px);
+    opacity: 1;
+    border-image: -webkit-linear-gradient(right,#ca38a6, #42a5c4);
+    border-image-slice: 1;
+    
+
+}
+.box:hover .content input {
+    
+    
+    
+    color: white;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
